@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>авторизация на сайте</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="modal modal--open">
+    <div class="modal__wrapper">
+      <h1 class="modal__title">Вход</h1>
+      <h2 class="modal__title-form">Вход через E-mail:</h2>
+      <form class="modal__form" action="#">
+        <div class="modal__input-email-wrapper">
+          <input class="modal__input-email" id="email" type="text" name="email" placeholder="email"
+            autocomplete="email">
+          <label class="input-label" for="email">E-mail</label>
+          <div class="modal__input-email-error"></div>
+        </div>
+        <div class="modal__input-password-wrapper">
+          <input class="modal__input-password" id="password" type="password" name="password" placeholder="p"
+            autocomplete="current-password">
+          <label class="input-label" for="password">Пароль</label>
+          <div class="modal__input-password-error"></div>
+          <button class="modal__btn-password btn-reset" type="button" aria-label="показать ввод">
+            <svg class="btn-password-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.5 16L17.025 12.604M12 17.5V14M4.5 16L6.969 12.612M3 8C6.6 16 17.4 16 21 8" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <button class="modal__form-btn-submit btn btn-reset" type="submit">Войти</button>
+        <div class="wrapper-text wrapper-text--password">
+          <a class="modal__form-link-password link" href="#">Забыли пароль?</a>
+        </div>
+      </form>
+      <div class="wrapper-text">
+        <p class="modal__form-text"> У вас нет аккаунта?</p>
+        <a class="modal__form-link-text link" href="#">Зарегистрируйтесь</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
